@@ -4,13 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrganizationDTO {
-    private Integer id;
-    private String name;
-    private String location;
-    private String desc;
+
+public class HierarchyDTO {
+
+    private String emp_mail;
+    private String man_mail;
+
 }

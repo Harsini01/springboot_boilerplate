@@ -12,5 +12,6 @@ import lombok.Setter;
 public class OrgDto {
     private int id;
     private String name;
-    private String description;
+    private String location;
+    private String desc;
 }

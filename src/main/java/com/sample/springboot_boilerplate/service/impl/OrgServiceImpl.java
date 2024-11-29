@@ -23,7 +23,7 @@ public class OrgServiceImpl implements OrgService {
         return orgs.stream()
                 .map(org -> new OrgDto(
                         (int) org[0], // Assuming first element is name/id
-                        (String) org[1], (String) org[2]))
+                        (String) org[1], (String) org[2],(String) org[3]))
                 .collect(java.util.stream.Collectors.toList());
     }
 }

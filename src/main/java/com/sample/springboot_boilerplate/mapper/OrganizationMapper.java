@@ -11,7 +11,9 @@ public class OrganizationMapper {
         return new OrganizationDTO(
                 organization.getId(),
                 organization.getName(),
+                organization.getLocation(),
                 organization.getDescription()
         );
     }
+    
 }

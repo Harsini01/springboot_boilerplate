@@ -16,7 +16,7 @@ public class AuthHandler {
     @SuppressWarnings("unchecked")
     public List<Object[]> authUser(String empEmail, String password) {
         StringBuilder query = new StringBuilder();
-        query.append("select * from t_user where emp_email = :empEmail and password = :password ");
+        query.append("select * from login where emp_mail = :empEmail and password = :password ");
 
         Query nativeQuery = entityManager.createNativeQuery(query.toString());
         nativeQuery.setParameter("empEmail", empEmail);

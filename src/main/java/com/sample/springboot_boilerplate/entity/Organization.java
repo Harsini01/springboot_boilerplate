@@ -13,17 +13,20 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 @Table(
-        name = "t_organization"
+        name = "organisation"
 )
 public class Organization {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false, updatable = false)
+    @Column(name = "org_id", nullable = false, updatable = false)
     private Integer id;
 
     @Column(name = "name", nullable = false, length = 64)
     private String name;
+
+    @Column(name = "loc", nullable = false, length = 64)
+    private String location;
 
     @Column(name = "description")
     private String description;
